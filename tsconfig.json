@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "baseUrl": "src",
+    "lib": [
+      "esnext"
+    ]
+  },
+  "include": [
+    "./src",
+    "./test"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
