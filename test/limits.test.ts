@@ -7,7 +7,7 @@ describe("Array limits", () => {
   function limitedArray() {
     const array = [0, 0, 0, 0];
     
-    array.limit(5);
+    array.limit(4);
 
     return array.push(1);
   }

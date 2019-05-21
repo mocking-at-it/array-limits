@@ -37,7 +37,7 @@ export class InvalidLimitValueException extends RangeError {
 }
 
 Array.prototype.isFull = function() {
-  return (this.length + 1) >= this.limit;
+  return this.length >= this.limit;
 }
 
 Array.prototype.full = function() {
