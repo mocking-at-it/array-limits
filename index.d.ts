@@ -1,8 +1,9 @@
 declare global {
   interface Array<T> {
-      limit: (limit: number) => Array<T>;
-      full: () => Array<T>;
-      isFull: () => boolean;
+    limit: (limit: number) => Array<T>;
+    full: () => Array<T>;
+    isFull: () => boolean;
+    availableSpace: () => number;
   }
 }
 export declare class ArrayLimitException extends RangeError {
