@@ -15,4 +15,12 @@ describe("Array limits", () => {
   it("should be able to add limit to an array", () => {
     limitedArray.should.throw(RangeError);
   });
+
+  it("should return array's available space", () => {
+    const arr = [0, 0, 0];
+
+    arr.limit(4);
+
+    arr.availableSpace().should.eq(1);
+  });
 });

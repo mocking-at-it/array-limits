@@ -5,6 +5,8 @@ declare global {
     full: () => Array<T>;
 
     isFull: () => boolean;
+
+    availableSpace: () => number;
   }
 }
 
@@ -38,6 +40,10 @@ export class InvalidLimitValueException extends RangeError {
 
 Array.prototype.isFull = function() {
   return this.length >= this.limit;
+}
+
+Array.prototype.availableSpace = function() {
+  return this.limit - this.length;
 }
 
 Array.prototype.full = function() {
