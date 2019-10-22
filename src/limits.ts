@@ -18,7 +18,7 @@ export class ArrayLimitException extends RangeError {
   constructor(...args) {
     super(...args);
 
-    this.message = `Array is set to have ${args[0]} elements only. Array is now full.`
+    this.message = "It's your fault!";
 
     Error.captureStackTrace(this, ArrayLimitException);
   }
@@ -32,7 +32,7 @@ export class InvalidLimitValueException extends RangeError {
   constructor(...args) {
     super(...args);
 
-    this.message = `Minimum array limit should be 1`
+    this.message = "It's your fault!";
 
     Error.captureStackTrace(this, InvalidLimitValueException);
   }
